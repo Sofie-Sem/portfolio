@@ -5,9 +5,14 @@
   font-family: monospace;
 }
 body{
-  background-color: lightblue;
+  background-color: black;
 }
-
+a{
+  color: lightblue;
+}
+a:hover{
+  color: aquamarine;
+}
 /* Header */
 header{
   background-color: black;
@@ -16,14 +21,22 @@ header h1{
   padding: 1%;
   color: white;
 }
+section p{
+  font-size: 107%;
+}
 
 /* Navigatie Menu */
 nav{
-  background-color: #93C4A8;
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: 0;
+  padding-bottom: 1%;
 }
-
 ul{
+  background-color: #93C4A8;
   padding: 0.8%;
+  border: 5px solid #73AB94;
+  border-radius: 10px 10px 10px 10px;
 }
 ul li{
   padding: 0.8%;
@@ -31,24 +44,37 @@ ul li{
   display: inline-block;
   background-color: black;
 }
-
 ul li a{
   font-weight: 600;
   font-size: 105%;
   text-decoration: none;
   color: white;
 }
-
 ul li a:hover{
   color: lightblue;
 }
 
 /* Kopjes */
-.een-l, .twee-r{
+.over-mij-l, .badges-r, .projecten-l{
   background-color: #2F4651;
   color: white;
+  width: 60%;
 }
-.een-r, .twee-l{
+.over-mij-r, .badges-l, .projecten-r{
   background-color: #CCE0D9;
   color: black;
+  width: 40%;
+  height: 400px;
+}
+
+.over-mij, .badges, .projecten{
+  /* border: 1px solid black; */
+  display: flex;
+  height: 400px;
+  justify-content: center;
+}
+.over-mij-r{
+  background-color: black;
+  justify-content: left;
+  display: inherit;
 }
