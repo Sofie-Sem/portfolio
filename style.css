@@ -9,9 +9,11 @@ body{
 }
 a{
   color: lightblue;
+  text-decoration: none
 }
 a:hover{
   color: aquamarine;
+  text-decoration: none
 }
 /* Header */
 header{
@@ -28,21 +30,24 @@ section p{
 /* Navigatie Menu */
 nav{
   /* position: -webkit-sticky; */
-  position: sticky;
+  /* padding-top: 0.1%; */
+  /* position: sticky; */
+  text-align: center;
   top: 0;
   padding-bottom: 1%;
 }
 ul{
-  background-color: #93C4A8;
-  padding: 0.8%;
-  border: 5px solid #73AB94;
-  border-radius: 10px 10px 10px 10px;
+  background-color: black;
+  padding: 0.3%;
+  /* border: 1px solid black; */
+  /* border-radius: 20px 20px 20px 20px; */
 }
 ul li{
   padding: 0.8%;
-  border-radius: 0px 20px 20px 20px;
+  /* border-radius: 0px 20px 20px 20px; */
+  width: 30%;
   display: inline-block;
-  background-color: black;
+  background-color: #2F4651;
 }
 ul li a{
   font-weight: 600;
@@ -53,28 +58,118 @@ ul li a{
 ul li a:hover{
   color: lightblue;
 }
-
-/* Kopjes */
-.over-mij-l, .badges-r, .projecten-l{
-  background-color: #2F4651;
-  color: white;
-  width: 60%;
-}
-.over-mij-r, .badges-l, .projecten-r{
-  background-color: #CCE0D9;
-  color: black;
-  width: 40%;
-  height: 400px;
+@media screen and (max-width: 600px) {
+  ul li {
+  float: none;
+  }
 }
 
-.over-mij, .badges, .projecten{
-  /* border: 1px solid black; */
+/* Over Mij en Badges */
+
+#over-mij{
   display: flex;
-  height: 400px;
   justify-content: center;
 }
 .over-mij-r{
   background-color: black;
+  color: black;
+  width: 40%;
   justify-content: left;
   display: inherit;
 }
+.over-mij-l, .badges-r{
+  background-color: #2F4651;
+  color: white;
+  width: 60%;
+}
+.badges-l{
+  background-color: #CCE0D9;
+  color: black;
+  width: 40%;
+}
+
+#badges, .badges-l{
+  display: flex;
+  justify-content: center;
+}
+.badges-l{
+  display: inline;
+}
+.badges-r ol{
+  padding-left: 3%;
+}
+.badges-r #klaar{
+  color: lightgreen;
+}
+
+/* Projecten */
+
+.projecten-l{
+  padding: 1%;
+  background-color: #2F4651;
+  color: white;
+}
+.projecten-r{
+  padding: 0.5%;
+  background-color: #2F4651;
+  display: flex;
+  justify-content: space-around;
+
+}
+.Project{
+  border: 2px solid black;
+  width: 17%;
+  padding: 0.5%;
+  background-color: #CCE0D9;
+}
+#projecten h4{
+  border: 4px solid #9DC4B5;
+  background-color: #C0D8D0;
+  border-radius: 5px 5px 5px 5px;
+}
+.Project p{
+  margin-top: 2%;
+  padding: 1%;
+  border: 2px solid #9DC4B5;
+  background-color: #C0D8D0;
+  border-radius: 5px 5px 5px 5px;
+}
+.Project a{
+  text-decoration: none;
+  color: #2F4651;
+}
+.Project a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+/* Footer */
+footer{
+  padding: 1%;
+  text-align: center;
+  color: white;
+  background: #2F4651;
+}
+footer a{
+  color: white;
+}
+footer a:hover{
+  color: lightblue;
+}
+/* up */
+/* .up{
+  background-color: #9DC4B5;
+  text-align: right;
+  right: 1%;
+  border: 1% solid green;
+  position: ;
+  justify-content: right;
+} */
+
+/* *:nth-child(even) {
+  background-color: khaki;
+}
+
+*:nth-child(odd) {
+  background-color: darkolivegreen;
+} */

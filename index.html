@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <title>Hoofdpagina</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   </head>
   <body>
     <header>
@@ -11,13 +12,13 @@
     </header>
     <nav>
       <ul>
-        <li><a href="#">Over mij...</a></li>
-        <li><a href="#">Badges</a></li>
-        <li><a href="#">Projecten</a></li>
+        <li><a href="index.html#over-mij">Over mij...</a></li>
+        <li><a href="index.html#badges">Badges</a></li>
+        <li><a href="index.html#projecten">Projecten</a></li>
       </ul>
     </nav>
     <section>
-      <article class="over-mij">
+      <article id="over-mij">
         <div class="over-mij-l">
           <h2>Over mij...</h2>
           <p>
@@ -33,7 +34,7 @@
           </p>
           <h3><br>Films</h3>
           <p>
-            Mijn favouriete Films zijn: Fantastic Beast en Thomb Raider(De nieuwste uit 2018). Ook weer films waar dingen in gebeuren die in het echt niet kunnen.
+            Mijn favouriete Films zijn: Fantastic Beast, Sherlock Holmes en The MazeRunner(vooral het derde deel, The Deathcure). Ook weer films waar dingen in gebeuren die in het echt niet kunnen.
             <br>
           </p>
           <h3><br>Muziek</h3>
@@ -44,32 +45,125 @@
 
         </div>
         <div class="over-mij-r">
-          <img src="foto's\over-mij.jpg" alt="Een foto van mij" height="400px">
+          <img src="fotos\over-mij.jpg" alt="Een foto van mij" height="400px">
           <!-- <p>Tomb <br>Raider <br>(film <br> uit <br> 2018)</p> -->
-          <img src="foto's\duka5.jpg" alt="Een foto van duka" height="400px">
+          <img src="fotos\duka5.jpg" alt="Een foto van duka" height="400px">
           <!-- <iframe width="50%" height="40%"src="https://www.youtube.com/embed/I1hNAIzkQWY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
       </article>
-      <article class="badges">
+      <article id="badges">
         <div class="badges-l">
-          <p>badges links</p>
+          <img src="fotos\HTMLCSS1.png" alt="HTMLCSS" width="49%">
+          <img src="fotos\Javascriptvoorweb.png" alt="Javascript-voor-web" width="49%">
+          <img src="fotos\Mindstorms.png" alt="Lego-Mindstorms" width="49%">
+          <img src="fotos\Python.png" alt="Python" width="49%">
         </div>
         <div class="badges-r">
-          <p>badges rechts</p>
+          <h1>Badges die ik heb gehaalt</h1>
+          <p>Alle badges zijn in levels in gedeelt, level 1 is het makkelijkst en level 6 is het moeilijkst. Ik heb achter de badges die ik heb gehaalt een &#10003; gezet.</p>
+          <br>
+          <h3>Level 1:</h3>
+          <ol id="klaar">
+            <li>Coderclass omgeving-0 &#10003;</li>
+            <li>Blokjesprogrammeren-0 &#10003;</li>
+            <li>HTML CSS-0 &#10003;</li>
+            <li>Python-0 &#10003;</li>
+          </ol>
+          <br>
+          <h3>Level 2:</h3>
+          <ol id="klaar">
+            <li>Python-1A &#10003;</li>
+            <li>Blender-0 &#10003;</li>
+            <li>Embedded-0 &#10003;</li>
+            <li>Robotica met Lego Mindstorms-0 &#10003;</li>
+          </ol>
+          <br>
+          <h3>Level 3:</h3>
+          <ol id="klaar">
+            <li>Python-1B &#10003;</li>
+            <li>HTML CSS-1 &#10003;</li>
+            <li>Datarepresentatie-0 &#10003;</li>
+            <li>Security-0 &#10003;</li>
+          </ol>
+          <br>
+          <h3>Level 4:</h3>
+          <ol id="klaar">
+            <li>Linux-0 &#10003;</li>
+            <li>Javascript voor web-0 &#10003;</li>
+            <li>Python-2 &#10003;</li>
+            <li>Ruby-0 &#10003;</li>
+          </ol>
+          <br>
+          <h3>Level 5:</h3>
+          <ol>
+            <li>HTML CSS-2</li>
+            <li id="klaar">Python-3 &#10003;</li>
+            <li>Computernetwerken-0</li>
+            <li id="klaar">Ruby-1 &#10003;</li>
+          </ol>
+          <br>
+          <h3>Level 6:</h3>
+          <ol>
+            <li>Python-4</li>
+            <li>Automaten-0</li>
+            <li>Javascript voor Games-0</li>
+            <li>Unity-0</li>
+            <li>Vrije keuze module level 5 en 6</li>
+          </ol>
         </div>
       </article>
-      <article class="projecten">
+      <article id="projecten">
         <div class="projecten-l">
-          <p>projecten links</p>
+          <h1>Projecten waar ik aan mee heb gedaan:</h1>
+          <p>In de coderclass hebben we vaak projecten, er zijn ook projecten die niet verplicht zijn. Dit zijn projecten waar ik aan het meegedaan.</p>
         </div>
         <div class="projecten-r">
-          <p>projecten rechts</p>
+          <!-- Venetië - Oosterpark - Philips Huelampen - Blender -->
+          <div class="Project">
+            <h4>HTMLCSS - Venetië</h4>
+            <p>Hier moesten we een website over een stad maken wij hadden Venetië gekozen.</p>
+            <p> <strong>Links: </strong>| <a href="https://gast2405.github.io/venetie/">Website</a> | <a href="https://github.com/gast2405/venetie">Github</a> |</p>
+          </div>
+          <div class="Project">
+            <h4>HTMLCSS - Oosterpark</h4>
+            <p>We kregen de opdracht om een website te maken over "Beacons".</p>
+            <p> <strong>Links: </strong> | <a href="https://sofie-sem.github.io/oosterpark.html/">Website</a> | <a href="https://github.com/Sofie-Sem/oosterpark.html"> Github</a> |</p>
+          </div>
+          <div class="Project">
+            <h4>Javascript - Philphs Hue lampen</h4>
+            <p>We hebben een programma gemaakt die via de Philps Hue lampen je batterij percentage laat zien.</p>
+            <p> <strong>Link: </strong> | <a href="https://github.com/Doruzzz/Hue-project">Github</a> |</p>
+          </div>
+          <div class="Project">
+            <h4>Blender - Warchild</h4>
+            <p>Dit project hebben we gekregen van Warchild, we kregen de opdracht om een Animatie te maken die over Warchild gaat.</p>
+            <!-- <video width="310" height="230" controls poster="fotos/Duka5.png">
+            <source src="fotos/Blenderanimatie.mp4" type="video/mp4"></video> -->
+            <video width="320" height="240" control>
+              <source src="ui.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <!-- <video src="fotos\Blenderanimatie.avi" alt="Blender animatie" width="49%"> -->
+          </div>
+          <div class="Project">
+            <h4>Python - Galgje</h4>
+            <p>In dit programma kan je galgje spelen.</p>
+            <p> <strong>Link: </strong>| <a href="https://github.com/Sofie-Sem/Wordmind-Goed">Github</a> |</p>
+          </div>
+          <div class="Project">
+            <h4>Python - Telefoonnummers</h4>
+            <p>In dit programma kan je galgje spelen.</p>
+            <p> <strong>Link: </strong> | <a href="https://github.com/Sofie-Sem/Python3">Github</a> |</p>
+          </div>
         </div>
       </article>
     </section>
+    <!-- <div class="up">
+      <p>&#8593;</p>
+    </div> -->
     <footer>
-
+      <h3>Gemaakt door: <a href="index.html">Sofie Weetink</a></h3>
     </footer>
   </body>
-
+<!-- CCE0D9 | 93C4A8 |  A7C4BA -->
 </html>
