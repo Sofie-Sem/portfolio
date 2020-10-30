@@ -17,7 +17,13 @@ a:hover{
 }
 /* Header */
 header{
-  background-color: black;
+  height: 50vh;
+  background: url('Fotos/Background.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 header h1{
   padding: 1%;
@@ -29,30 +35,32 @@ section p{
 
 /* Navigatie Menu */
 nav{
-  /* position: -webkit-sticky; */
-  /* padding-top: 0.1%; */
-  /* position: sticky; */
+  background: url('Fotos/Background.jpg');
+  background-size: cover;
+  height: 50vh;
   text-align: center;
   top: 0;
   padding-bottom: 1%;
+  /* display: flex; */
+  align-items: flex-end
 }
 ul{
-  background-color: black;
   padding: 0.3%;
-  /* border: 1px solid black; */
-  /* border-radius: 20px 20px 20px 20px; */
+}
+ul li p{
+  font-size: 130%;
 }
 ul li{
   padding-top: 0.8%;
   padding-bottom: 0.8%;
-  /* border-radius: 0px 20px 20px 20px; */
   width: 32%;
+  /* color: #2F4651; */
+  /* text-align: center; */
   display: inline-block;
-  background-color: #2F4651;
+  background-color: #61A1BD;
 }
 ul li:hover{
-  background-color: #61A1BD;
-  text: black;
+  background-color: #2F4651;
 }
 ul li a{
   font-weight: 600;
@@ -61,7 +69,7 @@ ul li a{
   color: white;
 }
 ul li a:hover{
-  color: black;
+  color: lightblue;
 }
 /* @media screen and (max-width: 600px) {
   ul li {
@@ -69,18 +77,33 @@ ul li a:hover{
   }
 } */
 
+hr{
+  color: black;
+  border: solid black 2px;
+  background-color: black;
+
+}
+
+
 /* Over Mij */
+table, td, th{
+  text-align: left;
+}
+table img{
+  padding-right: 5vw;
+}
 
 #over-mij{
   display: flex;
   justify-content: center;
+  height: 100vh;
 }
 .over-mij-r{
   background-color: black;
   color: black;
   width: 40%;
-  justify-content: left;
-  display: inherit;
+  background: url('Fotos/duka5.jpg');
+  background-size: cover;
 }
 .over-mij-l{
   background-color: #2F4651;
@@ -90,7 +113,6 @@ ul li a:hover{
   padding-right: 2vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
-
   /* Badges */
 }
 .badges-r{
@@ -105,6 +127,7 @@ ul li a:hover{
   width: 40%;
 }
 #badges, .badges-l{
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -124,6 +147,74 @@ ul li a:hover{
   background-color: #2F4651;
 }
 /* Projecten */
+#projecten-l{
+  background-color: #2F4651;
+  color: white;
+  padding: 1vw;
+  height: 10vh;
+}
+#mijn-projecten{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 15%;
+  grid-column-gap: 5%;
+  padding: 2%;
+  height: 90vh;
+  background: url('Fotos/Background.jpg');
+  background-size: cover;
+  background-color: white;
+}
+
+#mijn-projecten div{
+  color: white;
+  text-align: center;
+  padding-top: 2vh;
+  font-size: 150%;
+  border-radius: 10%;
+
+}
+
+#mijn-projecten div p{
+  padding: 2vh;
+  background-color: rgba(0,0,0,0.5);
+  color: rgba(255,255,255,1);
+}
+#mijn-projecten div p a{
+  padding: 2vh;
+  color: white;
+}
+#mijn-projecten div p a:hover{
+  padding: 2vh;
+  color: #CCE0D9;
+}
+#plaatje1{
+  background: url('Fotos/venetie.jpg');
+  background-size: cover;
+  color: rgba(255,255,255,1);
+}
+#plaatje2{
+  background: url('Fotos/oosterpark.jpg');
+  background-size: cover;
+  color: rgba(255,255,255,1);
+}
+#plaatje3{
+  background: url('Fotos/galgje.PNG');
+  background-size: cover;
+}
+#plaatje4{
+  background: url('Fotos/Contactenlijst.PNG');
+  background-size: cover;
+}
+#plaatje5{
+  background: url('Fotos/Ideeen-website.PNG');
+  background-size: cover;
+}
+#plaatje6{
+  background: url('Fotos/ruby.PNG');
+  background-size: cover;
+}
+
 
 .projecten-l{
   padding: 1%;
@@ -199,20 +290,3 @@ footer a{
 footer a:hover{
   color: lightblue;
 }
-/* up */
-/* .up{
-  background-color: #9DC4B5;
-  text-align: right;
-  right: 1%;
-  border: 1% solid green;
-  position: ;
-  justify-content: right;
-} */
-
-/* *:nth-child(even) {
-  background-color: khaki;
-}
-
-*:nth-child(odd) {
-  background-color: darkolivegreen;
-} */
