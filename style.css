@@ -191,12 +191,10 @@ table img{
 #plaatje1{
   background: url('Fotos/venetie.jpg');
   background-size: cover;
-  color: rgba(255,255,255,1);
 }
 #plaatje2{
   background: url('Fotos/oosterpark.jpg');
   background-size: cover;
-  color: rgba(255,255,255,1);
 }
 #plaatje3{
   background: url('Fotos/galgje.PNG');
@@ -237,45 +235,12 @@ table img{
   position: relative;
   border-radius: 10% 10% 10% 10%;
   margin-left: 1vw;
-  /* padding: 5%; */
 }
 
 .Project-text{
   padding: 5%;
   text-align: center;
 }
-
-
-
-/* .projecten-r{
-  padding: 0.5%;
-  background-color: #2F4651;
-  display: flex;
-  justify-content: space-around;
-}
-.Project{
-  border: 2px solid black;
-  width: 12%;
-  padding: 0.5%;
-  background-color: #3C5A68;
-  height: 180px;
-}
-#projecten h4{
-  text-align: center;
-}
-.Project p{
-  margin-top: 2%;
-  padding: 1%;
-  border-radius: 5px 5px 5px 5px;
-}
-.Project a{
-  text-decoration: none;
-  color: white;
-}
-.Project a:hover{
-  text-decoration: none;
-  color: white;
-} */
 
 /* Footer */
 footer{
